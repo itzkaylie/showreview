@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@200..800);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none; /* Removed underlines and stuff */
+    font-size: 18px;
+    color: black;
+    display: block; /* Makes the links stack vertically */
+}
+  
+  /* Hover Effects */
+.sidenav a:hover {
+    background-color: white;
+    color: lightskyblue;
+}
+
+/* COVER PAGE */
+.title {
+    margin-left: 250px; /* Same as the width of the side nav */
+    padding: 20px;
+}
+
+/* CDRAMA PAGE */
+
+.drama-title {
+   font-size: 3rem;
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+.drama-list {
+    display: block;
+    margin: 0 auto;
+}
+
+.drama-container {
+    display: flex; /* Align child elements (image and content) horizontally */
+    align-items: center; /* Vertically center align items */
+    width: 900px;
+    max-width:100%;
+    gap: 1rem; /* Add space between image and text */
+    margin: 1.5rem auto; 
+    padding: 0.8rem;
+    background: white;
+    border-radius: 1rem;
+    border: rgb(163, 163, 163) 0.1rem solid;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+} 
+
+.drama-img img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.drama-container:hover {
+    transform: translateY(-5px);
+}
+
+.drama-content {
+    display: flex; /* Vertical layout for text */
+    flex-direction: column; /* Stack children vertically */
+    flex: 1;
+}
+
+.review {
+    margin-top: 0.5rem;
+}
+
+.rating {
+    display: inline-block;
+    font-size: 24px;
+    color: #ccc
+}
+
+.rating .filledstar {
+    color: gold;
+}
+  

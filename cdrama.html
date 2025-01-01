@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Reviews </title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="mediaqueries.css"/>
+    </head>
+</html>
+
+<body>
+    <script> 
+        fetch('sidebar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('afterbegin', data);
+        })
+        .catch(error => console.error('Error loading sidebar:', error));
+    </script>
+    <div class="drama-title"><h1>C-drama</h1></div>
+    <div class="drama-list">
+        <div class="drama-container">
+            <div class="drama-img">
+                <img 
+                    src="./assets/goahead.jpg"
+                    alt="Go Ahead Pic"
+                />
+            </div>
+            <div class="drama-content">
+                <h1>Go Ahead</h1>
+                <div class="rating">
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                </div>
+                <p>I really enjoyed this drama, my favorite of all time!</p>
+            </div>
+        </div>
+        <div class="drama-container">
+            <div class="drama-img">
+                <img 
+                    src="./assets/hiddenlove.jpg"
+                    alt="Hidden Love Pic"
+                />
+            </div>
+            <div class="drama-content">
+                <h1>Hidden Love</h1>
+                <div class="rating">
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                </div>
+                <p>I really enjoyed this!</p>
+            </div>
+        </div>
+        <div class="drama-container">
+            <div class="drama-img">
+                <img 
+                    src="./assets/fallingintoyoursmile.jpg"
+                    alt="Falling Into Your Smile Pic"
+                />
+            </div>
+            <div class="drama-content">
+                <h1>Falling Into Your Smile</h1>
+                <div class="rating">
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                </div>
+                <p>I really enjoyed this!</p>
+            </div>
+        </div>
+        <div class="drama-container">
+            <div class="drama-img">
+                <img 
+                    src="./assets/oursecret.jpg"
+                    alt="Our Secret Pic"
+                />
+            </div>
+            <div class="drama-content">
+                <h1>Our Secret</h1>
+                <div class="rating">
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                </div>
+                <p>I really enjoyed this!</p>
+            </div>
+        </div>
+        <div class="drama-container">
+            <div class="drama-img">
+                <img 
+                    src="./assets/asbeautifulasyou.png"
+                    alt="As Beautiful As You Pic"
+                />
+            </div>
+            <div class="drama-content">
+                <h1>As Beautiful As You</h1>
+                <div class="rating">
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p>It was alright</p>
+            </div>
+        </div>
+        <div class="drama-container">
+            <div class="drama-img">
+                <img 
+                    src="./assets/wheniflytowardsyou.jpg"
+                    alt="When I fly Towards You Pic"
+                />
+            </div>
+            <div class="drama-content">
+                <h1>When I Fly Towards You</h1>
+                <div class="rating">
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                </div>
+                <p>It was very very cute</p>
+            </div>
+        </div>
+        <div class="drama-container">
+            <div class="drama-img">
+                <img 
+                    src="./assets/amidstasnowstormoflove.jpg"
+                    alt="Amidst A Snowstorm Of Love Pic"
+                />
+            </div>
+            <div class="drama-content">
+                <h1>Amidst A Snowstorm Of Love</h1>
+                <div class="rating">
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                </div>
+                <p>It was very unique and I loved both actors alot, no drama just sweetness </p>
+            </div>
+        </div>
+        <div class="drama-container">
+            <div class="drama-img">
+                <img 
+                    src="./assets/onlyforlove.jpg"
+                    alt="Only For Love Pic"
+                />
+            </div>
+            <div class="drama-content">
+                <h1>Only For Love</h1>
+                <div class="rating">
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="filledstar">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p>Im not a big fan of buisness dramam but this was chill.</p>
+            </div>
+        </div>
+    </div>
+</body>

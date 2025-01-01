@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Reviews </title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="mediaqueries.css"/>
+     </head>
+
+<body>
+    <script> 
+        fetch('sidebar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('afterbegin', data);
+        })
+        .catch(error => console.error('Error loading sidebar:', error));
+    </script>
+    
+    <div id="home">
+        <div class="title">
+            <h1> This is my show reviews </h1>
+        </div>
+        <div>
+
+        </div>
+    </div>
+</body>
